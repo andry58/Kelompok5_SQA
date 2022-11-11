@@ -8,5 +8,5 @@ public class Constants {
 
     public static final String CHROMEHEADLESS = "ChromeHeadless";
 
-    public static final String URL = "https://shop.demoqa.com/";
+    public static final String URL = "https://dev.ptdika.com/web_jc_v2/admin/login";
 }

@@ -1,6 +1,5 @@
 package com.juaracoding.Driver.Strategis;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
