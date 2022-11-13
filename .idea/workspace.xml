@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="TempletAwal">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/DriverSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Chrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/DriverStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/DriverStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Firefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Firefox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Chrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/DriverStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/DriverStrategyImplementer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Firefox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/01.Login.Feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/Hooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestLogin.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="AndriYansyah" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "app.teamhub.trackedBranches": "15ovlo8/AndriYansyah,15ovlo8/Bramantyo,15ovlo8/WidyaFitri,15ovlo8/master",
-    "last_opened_file_path": "C:/Java/Kelompok5_SQA/src/main/java/com/juaracoding/Driver/Strategis",
+    "last_opened_file_path": "C:/Mycoolfile/Juara Coding/ProjectMagangJC/Kelompok5_SQA",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -58,6 +63,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Mycoolfile\Juara Coding\ProjectMagangJC\Kelompok5_SQA\src\test\java" />
+      <recent name="C:\Mycoolfile\Juara Coding\ProjectMagangJC\Kelompok5_SQA\src\main\resources\Feature" />
       <recent name="C:\Java\Kelompok5_SQA\src\main\java\com\juaracoding\Driver\Strategis" />
       <recent name="C:\Java\Kelompok5_SQA" />
       <recent name="C:\Java\Kelompok5_SQA\.idea" />
@@ -67,6 +74,30 @@
       <recent name="com.juaracoding.Utils" />
       <recent name="com.juaracoding.Driver.Strategis" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RunnerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Kelompok5_SQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juaracoding.cucumber.step_definitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.juaracoding.cucumber.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="com.juaracoding.cucumber.step_definitions.RunnerTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.RunnerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
