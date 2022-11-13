@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Chrome implements DriverStrategy {
     public WebDriver setStrategy() {
+
         System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe"); //WebDriversManagers.chrome.setup();
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
