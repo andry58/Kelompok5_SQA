@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="TempletAwal">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/01.Login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Chrome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/DriverStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/DriverStrategyImplementer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Driver/Strategis/Firefox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/01.Login.Feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/Hooks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestLogin.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +39,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "app.teamhub.trackedBranches": "15ovlo8/AndriYansyah,15ovlo8/Bramantyo,15ovlo8/WidyaFitri,15ovlo8/master",
-    "last_opened_file_path": "C:/Mycoolfile/Juara Coding/ProjectMagangJC/Kelompok5_SQA",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;app.teamhub.trackedBranches&quot;: &quot;15ovlo8/AndriYansyah,15ovlo8/Bramantyo,15ovlo8/WidyaFitri,15ovlo8/master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Mycoolfile/Juara Coding/ProjectMagangJC/Kelompok5_SQA&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Mycoolfile\Juara Coding\ProjectMagangJC\Kelompok5_SQA\src\test\java" />
