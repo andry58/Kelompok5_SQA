@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="tambahbenefittest" />
+    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="tambahpagesdanfeature">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Feature/02.EditBenefit.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiDua.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiEmpat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiSatu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiTiga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestEditBenefit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulDua.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulEmpat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulSatu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulTiga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/TambahBenefitPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/TambahBenefitPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/01.TambahBenefit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Feature/01.TambahBenefit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestBenefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestBenefit.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,11 +56,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;app.teamhub.trackedBranches&quot;: &quot;15ovlo8/AndriYansyah,15ovlo8/Bramantyo,15ovlo8/WidyaFitri,15ovlo8/master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/Kelompok5_SQA/src/main/java/com/juaracoding/Driver/Strategis&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Windows 10/IdeaProjects/Magang_Buat_Test&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -54,6 +70,7 @@
       <recent name="C:\Java\Kelompok5_SQA\.idea" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.juaracoding" />
       <recent name="com.juaracoding.Driver" />
       <recent name="com.juaracoding.Utils" />
       <recent name="com.juaracoding.Driver.Strategis" />
@@ -113,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668358565614</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tambahpagesdanfeature">
+      <created>1668422309547</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668422309548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +167,18 @@
     <MESSAGE value="TempletAwal" />
     <MESSAGE value="tambahbenefit" />
     <MESSAGE value="tambahbenefittest" />
-    <option name="LAST_COMMIT_MESSAGE" value="tambahbenefittest" />
+    <MESSAGE value="tambahpagesdanfeature" />
+    <option name="LAST_COMMIT_MESSAGE" value="tambahpagesdanfeature" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/juaracoding/RunnerTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
