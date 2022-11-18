@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="Update tetimonial">
+    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="Update tetimonial1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Testimonial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Testimonial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/02.Testimonial.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestTestimonial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestTestimonial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668498510613</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update tetimonial1">
+      <created>1668754344817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668754344817</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +232,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TempletAwal" />
     <MESSAGE value="commit modul login" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit modul login" />
+    <MESSAGE value="Update tetimonial1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update tetimonial1" />
   </component>
 </project>

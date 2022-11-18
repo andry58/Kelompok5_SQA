@@ -36,7 +36,23 @@ public enum TestScenarios {
     T32("TCC.JC.032 Edit Testimonial Edit  Isi Testimonial menggunakan simbol"),
     T33("TCC.JC.033 Edit Testimonial Tidak Edit Isi Testimonial"),
     T34("TCC.JC.034 Edit Testimonial Edit  Select Rating   berdasarkan pilihan (0, 1, 2, 3,4,5)"),
-    T35("TCC.JC.035 Edit Testimonial Menyimpan Edit Testimonial")
+    T35("TCC.JC.035 Edit Testimonial Menyimpan Edit Testimonial"),
+    T169(" TCC.JC.0169 Add Contact Massage Membuka Menu Contact Massage"),
+    T170("TCC.JC.0170 Add Contact Massage Input Full Name menggunakan huruf"),
+    T171("TCC.JC.0171 Add Contact Massage Input Full Name menggunakan simbol"),
+    T172("TCC.JC.0172 Add Contact Massage Tidak Input Full Name"),
+    T173("TCC.JC.0173 Add Contact Massage Input Alamat Email"),
+    T174("TCC.JC.0174 Add Contact Massage Tidak Input Alamat Email"),
+    T175("TCC.JC.0175 Add Contact Massage Input nomor Telepon"),
+    T176("TCC.JC.0176 Add Contact Massage Input Nomor Telepon menggunakan huruf"),
+    T177("TCC.JC.0177 Add Contact Massage Tidak Input Nomor Telepon"),
+    T178("TCC.JC.0178 Add Contact Massage Input Subject"),
+    T179("TCC.JC.0179 Add Contact Massage Input Subject menggunakan menggunakan simbol"),
+    T180(" TCC.JC.0180 Add Contact Massage Tidak Input Subject"),
+    T181("TCC.JC.0181 Add Contact Massage Input Massage"),
+    T182("TCC.JC.0182 Add Contact Massage Input  Massage  menggunakan simbol"),
+    T183("TCC.JC.0183 Add Contact Massage Tidak Input  Massage"),
+    T184("TCC.JC.0184 Add Contact Massage Clik button Sand Massege")
 
     ;
 
