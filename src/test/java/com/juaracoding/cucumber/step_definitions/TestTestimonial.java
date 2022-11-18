@@ -404,7 +404,7 @@ public class TestTestimonial {
 
     @And("TCC.JC.017 User enter Nama Peserta")
     public void user_enter_fullname8() {
-        testimonial.fullname("Andri Yansyah");
+        testimonial.fullname("Andri no");
         extentTest.log(LogStatus.PASS, "TCC.JC.017 User enter Nama Peserta");
     }
 
@@ -652,68 +652,325 @@ public class TestTestimonial {
     //Test Search Nama Peserta
 
 
-    @When("TCC.JC.023 User input Search nama peserta")
-    public void user_search_nama_peserta() {
+    @When("TCC.JC.023 Admin input Search nama peserta")
+    public void admin_search_nama_peserta() {
         testimonial.searchNama();
-        extentTest.log(LogStatus.PASS, "TCC.JC.023 User input Search nama peserta");
+        extentTest.log(LogStatus.PASS, "TCC.JC.023 Admin input Search nama peserta");
     }
 
-    @Then("TCC.JC.023 User click nama peserta")
-    public void user_click_nama_peserta() {
+    @Then("TCC.JC.023 Admin click nama peserta")
+    public void admin_click_nama_peserta() {
         testimonial.pilihnama();
-        extentTest.log(LogStatus.PASS, "TCC.JC.023 User click nama peserta");
+        extentTest.log(LogStatus.PASS, "TCC.JC.023 Admin click nama peserta");
     }
 
 
     //Edit Testimonial
     //test case 1
-  //  @When("TCC.JC.024 User input Search nama peserta")
-   // public void user_search_nama_peserta1() {
-      //  testimonial.searchNama();
-       // extentTest.log(LogStatus.PASS, "TCC.JC.024 User input Search nama peserta");
-   // }
 
-  //  @And("TCC.JC.024 User click nama peserta")
-      //  testimonial.pilihnama();
-       // extentTest.log(LogStatus.PASS, "TCC.JC.024 User click nama peserta");
-    //}
-    @When("TCC.JC.024 User upload foto Ulang size maksimal 1 MB")
-    public void user_upload_foto_ulang() {
-
+    @When("TCC.JC.024 Admin upload foto Ulang size maksimal 1 MB")
+    public void admin_upload_foto_ulang() {
         testimonial.Pilihulang("C:\\Users\\KPI\\Downloads\\image001 (1).Jpg");
-        extentTest.log(LogStatus.PASS, "TCC.JC.024 User upload foto Ulang size maksimal 1 MB");
+        extentTest.log(LogStatus.PASS, "TCC.JC.024 Admin upload foto Ulang size maksimal 1 MB");
     }
 
-    @And("TCC.JC.024 User Edit Nama Peserta")
-    public void user_Edit_fullname() {
-
-        testimonial.EditNamaPeserta("Andri Yansh");
-        extentTest.log(LogStatus.PASS, "TCC.JC.024 User Edit Nama Peserta");
-    }
-
-    @And("TCC.JC.024 User Edit select publish Active")
-    public void user_Edit_select_publish() {
-        testimonial.EditSelectPublishactive();
-        extentTest.log(LogStatus.PASS, "TCC.JC.024 User Edit select publish Active");
-    }
-
-    @And("TCC.JC.024 User Edit isi Testimonial")
-    public void user_Edit_isi_Testimonial() {
-        testimonial.EditTxtIsiTestimonial("SangJuara");
-        extentTest.log(LogStatus.PASS, "TCC.JC.024 User Edit isi Testimonial");
-    }
-
-    @And("TCC.JC.024 User Edit select rating berdasarkan pilihan")
-    public void user_Edit_select_rating() {
-        testimonial.editSelectrating();
-        extentTest.log(LogStatus.PASS, "TCC.JC.024 User Edit select rating berdasarkan pilihan ");
-    }
-
-    @Then("TCC.JC.024 User click button Simpan Edit")
-    public void user_click_button_save_edit() {
+    @Then("TCC.JC.024 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit1() {
         testimonial.clickBtnSimpanEdit();
-        extentTest.log(LogStatus.PASS, "TCC.JC.024 User click button Simpan Edit");
+        extentTest.log(LogStatus.PASS, "TCC.JC.024 Admin click button Simpan Edit");
+    }
+
+    //Tase case 2
+    @When("TCC.JC.025 Admin input Search nama peserta")
+    public void admin_search_nama_peserta1() {
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.025 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.025 Admin click nama peserta")
+    public void admin_click_nama_peserta1() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.025 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.025 Admin Tidak Edit Uploud Foto")
+    public void admin_Tidak_edit_Uploud_Foto1() {
+        extentTest.log(LogStatus.PASS, "TCC.JC.025 Admin Tidak Edit Uploud Foto");
+    }
+    @Then("TCC.JC.025 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.025 Admin click button Simpan Edit");
+    }
+
+
+    //Tese case 3
+
+    @When("TCC.JC.026 Admin click nama peserta")
+    public void admin_click_nama_peserta2() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.026 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.026 Admin Edit nama lengkap menggunakan huruf")
+    public void admin_Edit_nama_lengkap_menggunakan_huruf() {
+        testimonial.EditNamaPeserta("Andriy");
+        extentTest.log(LogStatus.PASS, "TCC.JC.026 Admin Edit nama lengkap menggunakan huruf");
+    }
+
+    @Then("TCC.JC.026 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit2() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.026 Admin click button Simpan Edit");
+    }
+
+    //tase case 4
+
+    @When("TCC.JC.027 Admin input Search nama peserta")
+    public void admin_search_nama_peserta3() {
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.027 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.027 Admin click nama peserta")
+    public void admin_click_nama_peserta3() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.027 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.027 Admin Edit nama Peserta menggunakan simbol")
+    public void admin_Edit_nama_lengkap_menggunakan_simbol() {
+        testimonial.EditNamaPeserta("Andriy!!!!!");
+        extentTest.log(LogStatus.PASS, "TCC.JC.027 Admin Edit nama lengkap menggunakan huruf");
+    }
+    @Then("TCC.JC.027 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit3() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.027 Admin click button Simpan Edit");
+    }
+
+    //tase case 5
+    @When("TCC.JC.028 Admin input Search nama peserta")
+    public void admin_search_nama_peserta4() {
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.028 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.028 Admin click nama peserta")
+    public void admin_click_nama_peserta4() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.028 Admin click nama peserta");
+    }
+
+
+    @And("TCC.JC.028 Admin Tidak Edit Nama Peserta")
+    public void admin_Tidak_Edit_nama_Peserta() {
+        extentTest.log(LogStatus.PASS, "TCC.JC.028 Admin Tidak Edit Nama Peserta");
+    }
+
+
+    @Then("TCC.JC.028 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit4() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.028 Admin click button Simpan Edit");
+    }
+
+    //tes case 6
+
+    @When("TCC.JC.029 Admin input Search nama peserta")
+    public void admin_search_nama_peserta5() {
+        testimonial.searchNama1();
+        extentTest.log(LogStatus.PASS, "TCC.JC.029 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.029 Admin click nama peserta")
+    public void admin_click_nama_peserta5() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.029 Admin click nama peserta");
+    }
+
+
+    @And("TCC.JC.029 Admin Edit Select Publish berdasarkan pilihan Active")
+    public void admin_Edit_Select_Publish_berdasarkan_pilihan_Active() {
+        testimonial.EditSelectPublishactive();
+        extentTest.log(LogStatus.PASS, "TCC.JC.029 Admin Edit Select Publish berdasarkan pilihan Active");
+    }
+    @Then("TCC.JC.029 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit5() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.029 Admin click button Simpan Edit");
+    }
+
+    //tase case 7
+    @When("TCC.JC.030 Admin input Search nama peserta")
+    public void admin_search_nama_peserta6() {
+
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.030 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.030 Admin click nama peserta")
+    public void admin_click_nama_peserta6() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.030 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.030 Admin Edit  Select Publish berdasarkan pilihan No Active")
+    public void admin_Edit_Select_Publish_berdasarkan_pilihan_noActive() {
+        testimonial.EditSelectPublishnonactive();
+        extentTest.log(LogStatus.PASS, "TCC.JC.030 Admin Edit  Select Publish berdasarkan pilihan No Active");
+    }
+
+    @Then("TCC.JC.030 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit6() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.030 Admin click button Simpan Edit");
+    }
+
+    //Tas case 8
+    @When("TCC.JC.031 Admin input Search nama peserta")
+    public void admin_search_nama_peserta7() {
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.031 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.031 Admin click nama peserta")
+    public void admin_click_nama_peserta7() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.031 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.031 Admin Edit  Isi Testimonial  menggunakan huruf")
+    public void admin_Edit_Isi_Testimonial_menggunakan_huruf() {
+        testimonial.EditTxtIsiTestimonial("Jadi yang terbaik");
+        extentTest.log(LogStatus.PASS, "TCC.JC.031 Admin Edit  Isi Testimonial  menggunakan huruf");
+    }
+
+    @Then("TCC.JC.031 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit7() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.031 Admin click button Simpan Edit");
+    }
+//Tase case 9
+
+    @When("TCC.JC.032 Admin input Search nama peserta")
+    public void admin_search_nama_peserta8() {
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.032 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.032 Admin click nama peserta")
+    public void admin_click_nama_peserta8() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.032 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.032 Admin Edit  Isi Testimonial menggunakan simbol")
+    public void admin_Edit_Isi_Testimonial_menggunakan_simbol() {
+        testimonial.EditTxtIsiTestimonial("Jadi yang terbaik!!!!");
+        extentTest.log(LogStatus.PASS, "TCC.JC.032 Admin Edit  Isi Testimonial menggunakan simbol");
+    }
+
+    @Then("TCC.JC.032 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit8() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.032 Admin click button Simpan Edit");
+    }
+
+    //tase csae 10
+
+    @When("TCC.JC.033 Admin input Search nama peserta")
+    public void admin_search_nama_peserta9() {
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.033 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.033 Admin click nama peserta")
+    public void admin_click_nama_peserta9() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.033 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.033 Admin Tidak Edit Isi Testimonial")
+    public void admin_Tidak_Edit_Isi_Testimonial() {
+        extentTest.log(LogStatus.PASS, "TCC.JC.033 Admin Tidak Edit Isi Testimonial");
+    }
+
+    @Then("TCC.JC.033 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit9() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.033 Admin click button Simpan Edit");
+    }
+//tase cse 11
+
+    @When("TCC.JC.034 Admin click nama peserta")
+    public void admin_click_nama_peserta10() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.034 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.034 Admin Edit  Select Rating berdasarkan pilihan")
+    public void admin_Edit_Select_Rating_berdasarkan_pilihan() {
+        testimonial.EditTxtIsiTestimonial("4");
+        extentTest.log(LogStatus.PASS, "TCC.JC.034 Admin Edit  Select Rating berdasarkan pilihan");
+    }
+
+    @Then("TCC.JC.034 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit10() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.034 Admin click button Simpan Edit");
+
+    }
+
+    //Tase case 12
+
+    @When("TCC.JC.035 Admin input Search nama peserta")
+    public void admin_search_nama_peserta11() {
+        testimonial.searchNama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin input Search nama peserta");
+    }
+
+    @And("TCC.JC.035 Admin click nama peserta")
+    public void admin_click_nama_peserta11() {
+        testimonial.pilihnama();
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin click nama peserta");
+    }
+
+    @And("TCC.JC.035 Admin upload foto Ulang size maksimal 1 MB")
+    public void admin_upload_foto_ulang1() {
+        testimonial.Pilihulang("C:\\Users\\KPI\\Downloads\\2mb.Jpg");
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin upload foto Ulang size maksimal 1 MB");
+    }
+
+    @And("TCC.JC.035 Admin Edit nama lengkap menggunakan huruf")
+    public void admin_Edit_nama_lengkap_menggunakan_huruf1() {
+        testimonial.EditNamaPeserta("Andriy");
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin Edit nama lengkap menggunakan huruf");
+    }
+
+    @And("TCC.JC.035 Admin Edit Select Publish berdasarkan pilihan Active")
+    public void admin_Edit_Select_Publish_berdasarkan_pilihan_Active1() {
+        testimonial.EditSelectPublishactive();
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin Edit Select Publish berdasarkan pilihan Active");
+    }
+    @And("TCC.JC.035 Admin Edit  Isi Testimonial  menggunakan huruf")
+    public void admin_Edit_Isi_Testimonial_menggunakan_huruf1() {
+        testimonial.EditTxtIsiTestimonial("Jadi yang terbaik");
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin Edit  Isi Testimonial  menggunakan huruf");
+    }
+    @And("TCC.JC.035 Admin Edit  Select Rating berdasarkan pilihan")
+    public void admin_Edit_Select_Rating_berdasarkan_pilihan1() {
+        testimonial.EditTxtIsiTestimonial("4");
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin Edit  Select Rating berdasarkan pilihan");
+    }
+
+    @Then("TCC.JC.035 Admin click button Simpan Edit")
+    public void admin_click_button_save_edit11() {
+        testimonial.clickBtnSimpanEdit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.035 Admin click button Simpan Edit");
+
     }
 
 
 }
+

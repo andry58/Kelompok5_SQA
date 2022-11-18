@@ -135,6 +135,10 @@ public class Testimonial {
 
     }
 
+    public void searchNama1(){
+        txtsearch.sendKeys("Andri no"+ Keys.ENTER);
+    }
+
     public void pilihnama() {
 
         pilihnama.click();
