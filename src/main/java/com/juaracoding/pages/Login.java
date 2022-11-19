@@ -37,12 +37,6 @@ public class Login {
     @FindBy(xpath = "//button[normalize-space()='OK']")
     WebElement btnOkNull;
 
-    @FindBy(xpath = "//h1[normalize-space()='Admin Login']")
-    WebElement txtValidUrl;
-
-    @FindBy(xpath = "//h1[normalize-space()='404 - File Not Found']")
-    WebElement txtInvalidUrl;
-
     @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[1]/div/div[3]/ul/li[2]/ul/li/a")
     WebElement btnLogout;
 
@@ -75,16 +69,5 @@ public class Login {
     public String getTxtInvalidCredentials() {
         return txtInvalidCredentials.getText();
     }
-
-    public String getTxtValidUrl() {
-        return txtValidUrl.getText();
-    }
-
-    public String getTxtInvalidUrl() {
-        return txtInvalidUrl.getText();
-    }
-
-
-
 
 }

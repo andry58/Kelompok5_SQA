@@ -1,13 +1,5 @@
 Feature: Login
 
-  Scenario: TCC.JC.001 Invalid URL
-    When TCC.JC.001 Admin enter invalid URL
-    Then TCC.JC.001 Admin gagal mengakses web, 404 file not found
-
-  Scenario: TCC.JC.002 Valid URL
-    When TCC.JC.002 Admin enter valid URL
-    Then TCC.JC.002 Admin berhasil mengakses web juara coding
-
   Scenario: TCC.JC.003 Admin Kosongkan Username dan password
     When TCC.JC.003 Admin klik button sign-in null
     Then TCC.JC.003 Admin gagal login username dan passwor kosong
@@ -28,9 +20,6 @@ Feature: Login
     And TCC.JC.006 Admin Klik button sign-in valid
     Then TCC.JC.006 Admin berhasil login
 
-  Scenario: TCC.JC.007 Admin logout
-    When TCC.JC.007 Admin klik button logout
-    Then TCC.JC.007 Admin berhasil logout kembali ke halaman login
 
 
 
