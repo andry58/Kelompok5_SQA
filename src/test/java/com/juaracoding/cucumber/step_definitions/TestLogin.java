@@ -20,37 +20,11 @@ public class TestLogin {
         extentTest = Hooks.extentTest;
     }
 
-    //Test Case Invalid URL
-    @When("TCC.JC.001 Admin enter invalid URL")
-    public void admin_enter_invalid_url() {
-        driver.get(Constants.INVALID_URL);
-        extentTest.log(LogStatus.PASS, "Admin enter invalid URL");
-    }
-
-    @Then("TCC.JC.001 Admin gagal mengakses web, 404 file not found")
-    public void admin_gagal_mengakses_web() {
-        Assert.assertEquals(login.getTxtInvalidUrl(), "404 - File Not Found");
-        extentTest.log(LogStatus.PASS, "Admin gagal mengakses web 404 file not found");
-    }
-
-    //Test Case Vlaid URL
-    @When("TCC.JC.002 Admin enter valid URL")
-    public void admin_enter_valid_url() {
-        driver.get(Constants.URL);
-        extentTest.log(LogStatus.PASS, "Admin enter valid URL");
-    }
-
-    @Then("TCC.JC.002 Admin berhasil mengakses web juara coding")
-    public void admin_berhasil_mengakses_web() {
-        Assert.assertEquals(login.getTxtValidUrl(), "Admin Login");
-        extentTest.log(LogStatus.PASS, "Admin on web juara coding");
-    }
-
     //Test Case null login
     @When("TCC.JC.003 Admin klik button sign-in null")
     public void admin_klik_button_signin_null() {
         login.clickBtnSignIn();
-        extentTest.log(LogStatus.PASS, "AAdmin klik button signin null");
+        extentTest.log(LogStatus.PASS, "Admin klik button signin null");
     }
 
     @Then("TCC.JC.003 Admin gagal login username dan passwor kosong")
@@ -61,7 +35,6 @@ public class TestLogin {
     }
 
     //Test Case Invalid login
-
     @When("TCC.JC.004 Admin input invalid username password")
     public void admin_input_invalid_username_password() {
         login.login("ucen@gmail.com", "ucen12");
@@ -124,6 +97,7 @@ public class TestLogin {
     }
 
     //Test Case Logout
+    /*
     @When("TCC.JC.007 Admin klik button logout")
     public void admin_klik_button_logout() {
         login.clickBtnLogout();
@@ -132,8 +106,10 @@ public class TestLogin {
 
     @Then("TCC.JC.007 Admin berhasil logout kembali ke halaman login")
     public void admin_berhasil_logout() {
-        Assert.assertEquals(login.getTxtValidUrl(), "Admin Login");
+        Assert.assertEquals(URL.getText(), "Admin Login");
         extentTest.log(LogStatus.PASS, "Admin berhasil logout kembali ke halaman login");
     }
+
+     */
 
 }
