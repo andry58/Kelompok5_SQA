@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="Update tetimonial1">
+    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/ContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/ContactMassage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Testimonial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Testimonial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/02.Testimonial.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Feature/02.Testimonial.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestContactMassage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestTestimonial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestTestimonial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Bramantyo" />
+        <entry key="$PROJECT_DIR$" value="Test_merge" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -217,7 +222,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="AndriYansyah" />
+                        <option value="WidyaFitri" />
                       </list>
                     </value>
                   </entry>

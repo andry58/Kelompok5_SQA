@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.security.PublicKey;
+
 public class Testimonial {
 
     private WebDriver driver;
@@ -45,34 +47,24 @@ public class Testimonial {
     @FindBy(xpath = "//*[@id=\"frmadd\"]/div[3]/input")
     WebElement btnSave;
 
-    @FindBy(xpath = " //*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/div[2]/form/input")
-    WebElement txtsearch;
-
-    @FindBy(xpath = " //*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/div[4]/figure[1]/a")
-    WebElement pilihnama;
-
-    //edit testimonial
-
-    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[2]/div/div[1]/div/input[3]")
-    WebElement pilihulang;
-
-    @FindBy(xpath = "//*[@id=\"nama\"]")
-    WebElement Editnama;
-
-    @FindBy(xpath = "//*[@id=\"exampleFormControlSelect9\"]")
-    WebElement EditSelectPublish;
-
-    @FindBy(xpath = "//*[@id=\"summernote\"]")
-    WebElement EdittxtIsiTestimonial;
-
-    @FindBy(xpath = "//*[@id=\"rating\"]")
-    WebElement EditSelectReting;
 
 
-    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[3]/input")
-    WebElement btnSimpanedit;
+
+    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/div[4]/figure/a/div/p[2]")
+    WebElement txtStatus;
+
+    @FindBy(xpath = "/html/body/main/section[6]/div/div[2]/div/div/div[1]/div/div[13]/div/div/div/div[1]/div[2]/div/h1/text()")
+    WebElement txtStatusPublish;
+
+    @FindBy(xpath = "/html/body/div/h1")
+    WebElement txttidakberhasilfoto;
 
 
+    @FindBy(xpath = "//*[@id=\"frmadd\"]/div[2]/div/div[2]/div/div")
+    WebElement txttidakberhasilnama;
+
+    @FindBy(xpath = "//*[@id=\"frmadd\"]/div[2]/div/div[4]/div/div")
+    WebElement txtareatidakberhasil;
 
 
 
@@ -129,58 +121,38 @@ public class Testimonial {
         js.executeScript("arguments[0].click();", btnSave);
     }
 
-    public void searchNama() {
 
-        txtsearch.sendKeys("Andri Yansyah" + Keys.ENTER);
+    public String getTextberhasil(){
 
+        return txtStatus.getText();
     }
 
-    public void searchNama1(){
-        txtsearch.sendKeys("Andri no"+ Keys.ENTER);
+    public String getTexttidakberhasilfoto(){
+
+        return txttidakberhasilfoto.getText();
     }
 
-    public void pilihnama() {
+    public String getTexttidakberhasilnama(){
 
-        pilihnama.click();
-
+        return txttidakberhasilnama.getText();
     }
+
+    public String getTextareatidakberhasil(){
+
+        return txtareatidakberhasil.getText();
+    }
+    public String getTextberhasilPublish(){
+
+        return txtStatusPublish.getText();
+    }
+
+
+
+
+
 
     //edit Nama Peserta
 
-    public void Pilihulang(String locationFile) {
-        this.pilihulang.sendKeys(locationFile);
-    }
-
-    public void EditNamaPeserta(String fulname) {
-        this.Editnama.clear();
-        this.Editnama.sendKeys(fulname);
-
-    }
-
-    public void EditSelectPublishactive () {
-
-        EditSelectPublish.sendKeys("Active" + Keys.ENTER);
-    }
-
-    public void EditSelectPublishnonactive() {
-
-        EditSelectPublish.sendKeys("No Active" + Keys.ENTER);
-    }
-
-    public void EditTxtIsiTestimonial(String isi) {
-        this.EdittxtIsiTestimonial.clear();
-        this.EdittxtIsiTestimonial.sendKeys(isi);
-    }
-
-    public void editSelectrating() {
-
-        EditSelectReting.sendKeys("4" + Keys.ENTER);
-    }
-
-    public void clickBtnSimpanEdit() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnSimpanedit);
-    }
 
 }
 

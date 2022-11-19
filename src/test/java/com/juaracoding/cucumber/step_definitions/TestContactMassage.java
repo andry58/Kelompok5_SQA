@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class TestContactMassage {
 
@@ -66,10 +67,15 @@ public class TestContactMassage {
     }
 
 
-    @Then("TCC.JC.0170 clik Sand Massage")
+    @And("TCC.JC.0170 clik Sand Massage")
     public void user_clik_Sand_Massage() {
        contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0170 clik Sand Massage");
+    }
+    @Then("TCC.JC.0170 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpan(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0170 Data contact berhasil disimpan");
     }
 
 //tas case 2

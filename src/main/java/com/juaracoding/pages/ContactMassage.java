@@ -38,6 +38,9 @@ public class ContactMassage {
     @FindBy(xpath = "//*[@id=\"frmcontact\"]/button")
     WebElement btnSandmassage;
 
+    @FindBy(xpath = "/html/body/main/section/div/div/div/div[3]/div/alert")
+    WebElement txtstatus;
+
 
 
 
@@ -72,6 +75,10 @@ public class ContactMassage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", btnSandmassage);
 
+    }
+
+    public String getTextStatus(){
+        return txtstatus.getText();
     }
 
 

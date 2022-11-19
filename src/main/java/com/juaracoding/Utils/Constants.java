@@ -12,6 +12,8 @@ public class Constants {
 
     public static final String INVALID_URL = "https://dev.ptdika.com/web_jc_v2/admin/ogin";
 
+    public static final String PUBLISH_URL ="https://dev.ptdika.com/web_jc_v2/home";
+
 
 
 
