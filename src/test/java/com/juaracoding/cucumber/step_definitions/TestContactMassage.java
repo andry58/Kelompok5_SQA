@@ -679,7 +679,7 @@ public void user_Input_Full_Name2() {
     }
     @Then("TCC.JC.0183 Data contact berhasil disimpan")
     public void Data_contact_berhasil_disimpann3(){
-        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        Assert.assertEquals(contactMassage.getTextStatustidakisi(),"Get Connected With Us");
         extentTest.log(LogStatus.PASS, "TCC.JC.0183 Data contact berhasil disimpan");
     }
 

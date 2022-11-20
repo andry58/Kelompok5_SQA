@@ -55,6 +55,10 @@ public class ContactMassage {
 
 
 
+    @FindBy(xpath = "/html/body/main/section/div/div/div/div[3]/div/h4")
+    WebElement txtstatustidakisi;
+
+
 
 
 
@@ -113,6 +117,14 @@ public class ContactMassage {
 
         return txtstatultidakberhasilsubject.getText();
     }
+
+    public String getTextStatustidakisi(){
+
+        return txtstatustidakisi.getText();
+    }
+
+
+
 }
 
 
