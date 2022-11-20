@@ -40,9 +40,19 @@ public class EditTestimonial {
 
     //edit testimonial
 
-    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[3]/input")
+    @FindBy(xpath = " //*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[2]/div/div[2]/div/div")
+    WebElement txttidakberhasilnama;
+
+
+    @FindBy(xpath = " //*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[2]/div/div[4]/div/div")
+    WebElement txttidakberhasilisi;
+
+
+     @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[3]/input")
     WebElement btnSimpanedit;
 
+    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/div[4]/figure[1]/a/div/p[2]")
+    WebElement txtberhasil;
 
 
 
@@ -90,6 +100,17 @@ public class EditTestimonial {
     public void clickBtnSimpanEdit() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", btnSimpanedit);
+    }
+    public String getTexttidakberhasilnama(){
+
+        return txttidakberhasilnama.getText();
+    }
+    public String getTextidakberhasilisi(){
+
+        return txttidakberhasilisi.getText();
+    }public String getTextberhasil(){
+
+        return txtberhasil.getText();
     }
 
 

@@ -78,7 +78,7 @@ public class TestTestimonial {
         extentTest.log(LogStatus.PASS, "TCC.JC.009 User select rating");
     }
 
-    @Then("TCC.JC.009 User click button save")
+    @And("TCC.JC.009 User click button save")
     public void user_click_button_save() {
         testimonial.clickBtnSave();
         extentTest.log(LogStatus.PASS, "TCC.JC.009 User click button save");

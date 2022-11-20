@@ -81,7 +81,7 @@ public class TestContactMassage {
 //tas case 2
 @When("TCC.JC.0171 Input Full Name Menggunakan simbol")
 public void user_Input_Full_Name_Menggunakan_simbol() {
-    contactMassage.fullname("Andri Yan!!");
+    contactMassage.fullname("Andri Yan>>");
     extentTest.log(LogStatus.PASS, "TCC.JC.0171 Input Full Name Menggunakan simbol");
 }
 
@@ -110,15 +110,22 @@ public void user_Input_Full_Name_Menggunakan_simbol() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0171  Input Massage");
     }
 
-    @Then("TCC.JC.0171 clik Sand Massage")
+    @And("TCC.JC.0171 clik Sand Massage")
     public void user_clik_Sand_Massage1() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0171 clik Sand Massage");
+    }
+    @Then("TCC.JC.0171 Data contact tidak berhasil disimpan")
+    public void Data_contact_tidak_berhasil_disimpan(){
+        Assert.assertEquals(contactMassage.getTextStatustidakberhasil(),"Karakter (<|>|'|\") tidak diizinkan");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0171 Data contact berhasil disimpan");
     }
 //tas case 3
 
 @When("TCC.JC.0172 Tidak Input Full Name")
 public void user_Tidak_Input_Full_Name() {
+driver.navigate().back();
+driver.navigate().refresh();
     contactMassage.fullname("");
     extentTest.log(LogStatus.PASS, "TCC.JC.0172 Tidak Input Full Name");
 }
@@ -148,16 +155,23 @@ public void user_Tidak_Input_Full_Name() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0172  Input Massage");
     }
 
-    @Then("TCC.JC.0172 clik Sand Massage")
+    @And("TCC.JC.0172 clik Sand Massage")
     public void user_clik_Sand_Massage2() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0172 clik Sand Massage");
+    }
+    @Then("TCC.JC.0172 Data contact tidak berhasil disimpan")
+    public void Data_contact_tidak_berhasil_disimpan2(){
+        Assert.assertEquals(contactMassage.getTextStatustidakberhasil(),"The name field is required.");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0172 Data contact berhasil disimpan");
     }
 
 //tas case 4
 
     @When("TCC.JC.0173 Input Full Name")
     public void user_Input_Full_Name() {
+        driver.navigate().back();
+        driver.navigate().refresh();
         contactMassage.fullname("Andri Yan");
         extentTest.log(LogStatus.PASS, "TCC.JC.0173 Input Full Name");
     }
@@ -187,15 +201,22 @@ public void user_Tidak_Input_Full_Name() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0173  Input Massage");
     }
 
-    @Then("TCC.JC.0173 clik Sand Massage")
+    @And("TCC.JC.0173 clik Sand Massage")
     public void user_clik_Sand_Massage3() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0173 clik Sand Massage");
+    }
+    @Then("TCC.JC.0173 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpan3(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0173 Data contact berhasil disimpan");
     }
 
 //tas case 5
 @When("TCC.JC.0174 Input Full Name")
 public void user_Input_Full_Name1() {
+    driver.navigate().back();
+    driver.navigate().refresh();
     contactMassage.fullname("Andri Yan");
     extentTest.log(LogStatus.PASS, "TCC.JC.0174 Input Full Name");
 }
@@ -225,15 +246,22 @@ public void user_Input_Full_Name1() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0174 Input Massage");
     }
 
-    @Then("TCC.JC.0174 clik Sand Massage")
+    @And("TCC.JC.0174 clik Sand Massage")
     public void user_clik_Sand_Massage4() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0174 clik Sand Massage");
+    }
+    @Then("TCC.JC.0174 Data contact tidak berhasil disimpan")
+    public void Data_contact_tidak_berhasil_disimpan5(){
+        Assert.assertEquals(contactMassage.getTextStatusEmailtidakberhasil(),"The email field is required.");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0174 Data contact berhasil disimpan");
     }
 
 //tes case 6
 @When("TCC.JC.0175 Input Full Name")
 public void user_Input_Full_Name2() {
+    driver.navigate().back();
+    driver.navigate().refresh();
     contactMassage.fullname("Andri Yan");
     extentTest.log(LogStatus.PASS, "TCC.JC.0175 Input Full Name");
 }
@@ -263,15 +291,23 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0175 Input Massage");
     }
 
-    @Then("TCC.JC.0175 clik Sand Massage")
+    @And("TCC.JC.0175 clik Sand Massage")
     public void user_clik_Sand_Massage5() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0175 clik Sand Massage");
     }
+    @Then("TCC.JC.0175 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpan6(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0175 Data contact berhasil disimpan");
+    }
 
     //tes case 7
+
     @When("TCC.JC.0176 Input Full Name")
     public void user_Input_Full_Name3() {
+        driver.navigate().back();
+        driver.navigate().refresh();
         contactMassage.fullname("Andri Yan");
         extentTest.log(LogStatus.PASS, "TCC.JC.0176 Input Full Name");
     }
@@ -301,16 +337,25 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0176 Input Massage");
     }
 
-    @Then("TCC.JC.0176 clik Sand Massage")
-    public void user_clik_Sand_Massage6() {
+    @And("TCC.JC.0176 clik Sand Massage")
+    public void user_clik_Sand_Massagee6() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0176 clik Sand Massage");
     }
+    @Then("TCC.JC.0176 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpan9(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0176 Data contact berhasil disimpan");
+    }
+
+
 
     //tes case 8
 
     @When("TCC.JC.0177 Input Full Name")
     public void user_Input_Full_Name4() {
+        driver.navigate().back();
+        driver.navigate().refresh();
         contactMassage.fullname("Andri Yan");
         extentTest.log(LogStatus.PASS, "TCC.JC.0177 Input Full Name");
     }
@@ -318,6 +363,7 @@ public void user_Input_Full_Name2() {
 
     @And("TCC.JC.0177 Input Alamat Email")
     public void user_Input_Alamat_Email3() {
+
         contactMassage.email("Andri933@gmail.com");
         extentTest.log(LogStatus.PASS, "TCC.JC.0177 Input Email");
     }
@@ -340,10 +386,15 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0177 Input Massage");
     }
 
-    @Then("TCC.JC.0177 clik Sand Massage")
+    @And("TCC.JC.0177 clik Sand Massage")
     public void user_clik_Sand_Massage7() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0177 clik Sand Massage");
+    }
+    @Then("TCC.JC.0177 Data contact tidak berhasil disimpan")
+    public void Data_contact_tidak_berhasil_disimpan7(){
+        Assert.assertEquals(contactMassage.getTextStatustidakberhasilphone(),"The phone field is required.");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0177 Data contact berhasil disimpan");
     }
 
 
@@ -351,7 +402,9 @@ public void user_Input_Full_Name2() {
 
     @When("TCC.JC.0178 Input Full Name")
     public void user_Input_Full_Name8() {
-        contactMassage.fullname("Andri Yan");
+        driver.navigate().back();
+        driver.navigate().refresh();
+        contactMassage.fullname("Andri Ya");
         extentTest.log(LogStatus.PASS, "TCC.JC.0178 Input Full Name");
     }
 
@@ -381,11 +434,17 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0178 Input Massage");
     }
 
-    @Then("TCC.JC.0178 clik Sand Massage")
+    @And("TCC.JC.0178 clik Sand Massage")
     public void user_clik_Sand_Massage8() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0178 clik Sand Massage");
     }
+    @Then("TCC.JC.0178 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpan8(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0178 Data contact berhasil disimpan");
+    }
+
 
     //tes case 10
 
@@ -411,7 +470,7 @@ public void user_Input_Full_Name2() {
 
     @And("TCC.JC.0179 Input Subject menggunakan menggunakan simbol")
     public void user_Input_Subject_menggunakan_menggunakan_simbol() {
-        contactMassage.subject("Pendaftaran!!!!");
+        contactMassage.subject("Pendaftaran>>");
         extentTest.log(LogStatus.PASS, "TCC.JC.0179 Input Subject menggunakan menggunakan simbol");
     }
 
@@ -421,15 +480,23 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0179 Input Massage");
     }
 
-    @Then("TCC.JC.0179 clik Sand Massage")
+
+    @And("TCC.JC.0179 clik Sand Massage")
     public void user_clik_Sand_Massage9() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0179 clik Sand Massage");
+    }
+    @Then("TCC.JC.0179 Data contact tidak berhasil disimpan")
+    public void Data_contact_tidak_berhasil_disimpan9(){
+        Assert.assertEquals(contactMassage.getTextStatustidakberhasilsubject(),"Karakter (<|>|'|\") tidak diizinkan");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0179 Data contact berhasil disimpan");
     }
 //tes case 11
 
     @When("TCC.JC.0180 Input Full Name")
     public void user_Input_Full_Namee() {
+        driver.navigate().back();
+        driver.navigate().refresh();
         contactMassage.fullname("Andri Yan");
         extentTest.log(LogStatus.PASS, "TCC.JC.0180 Input Full Name");
     }
@@ -460,16 +527,23 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0180 Input Massage");
     }
 
-    @Then("TCC.JC.0180 clik Sand Massage")
+    @And("TCC.JC.0180 clik Sand Massage")
     public void user_clik_Sand_Massagee() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0180 clik Sand Massage");
+    }
+    @Then("TCC.JC.0180 Data contact tidak berhasil disimpan")
+    public void Data_contact_tidak_berhasil_disimpann(){
+        Assert.assertEquals(contactMassage.getTextStatustidakberhasilsubject(),"The subject field is required.") ;
+        extentTest.log(LogStatus.PASS, "TCC.JC.0180 Data contact berhasil disimpan");
     }
 
     //tes case 12
 
     @When("TCC.JC.0181 Input Full Name")
     public void user_Input_Full_Namee1() {
+        driver.navigate().back();
+        driver.navigate().refresh();
         contactMassage.fullname("Andri Yan");
         extentTest.log(LogStatus.PASS, "TCC.JC.0181 Input Full Name");
     }
@@ -501,15 +575,23 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0181 Input Massage");
     }
 
-    @Then("TCC.JC.0181 clik Sand Massage")
+    @And("TCC.JC.0181 clik Sand Massage")
     public void user_clik_Sand_Massagee1() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0181 clik Sand Massage");
     }
+    @Then("TCC.JC.0181 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpann(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0181 Data contact berhasil disimpan");
+    }
+
 
     //tes cas 13
     @When("TCC.JC.0182 Input Full Name")
     public void user_Input_Full_Namee2() {
+        driver.navigate().back();
+        driver.navigate().refresh();
         contactMassage.fullname("Andri Yan");
         extentTest.log(LogStatus.PASS, "TCC.JC.0182 Input Full Name");
     }
@@ -541,10 +623,15 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0182 Input Massage");
     }
 
-    @Then("TCC.JC.0182 clik Sand Massage")
+    @And("TCC.JC.0182 clik Sand Massage")
     public void user_clik_Sand_Massagee2() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0182 clik Sand Massage");
+    }
+    @Then("TCC.JC.0182 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpann1(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0182 Data contact berhasil disimpan");
     }
 
 
@@ -552,7 +639,9 @@ public void user_Input_Full_Name2() {
 
     @When("TCC.JC.0183 Input Full Name")
     public void user_Input_Full_Namee3() {
-        contactMassage.fullname("Andri Yan");
+        driver.navigate().back();
+        driver.navigate().refresh();
+        contactMassage.fullname("Andri Yn");
         extentTest.log(LogStatus.PASS, "TCC.JC.0183 Input Full Name");
     }
 
@@ -583,10 +672,15 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0183 Input Massage");
     }
 
-    @Then("TCC.JC.0183 clik Sand Massage")
+    @And("TCC.JC.0183 clik Sand Massage")
     public void user_clik_Sand_Massagee3() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0183 clik Sand Massage");
+    }
+    @Then("TCC.JC.0183 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpann3(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0183 Data contact berhasil disimpan");
     }
 
 
@@ -594,6 +688,8 @@ public void user_Input_Full_Name2() {
 
     @When("TCC.JC.0184 Input Full Name")
     public void user_Input_Full_Namee4() {
+        driver.navigate().back();
+        driver.navigate().refresh();
         contactMassage.fullname("Andri Yan");
         extentTest.log(LogStatus.PASS, "TCC.JC.0184 Input Full Name");
     }
@@ -625,13 +721,15 @@ public void user_Input_Full_Name2() {
         extentTest.log(LogStatus.PASS, "TCC.JC.0184 Input Massage");
     }
 
-    @Then("TCC.JC.0184 clik Sand Massage")
+    @And("TCC.JC.0184 clik Sand Massage")
     public void user_clik_Sand_Massagee4() {
         contactMassage.clickBtnMassage();
         extentTest.log(LogStatus.PASS, "TCC.JC.0184 clik Sand Massage");
     }
-
-
-
+    @Then("TCC.JC.0184 Data contact berhasil disimpan")
+    public void Data_contact_berhasil_disimpann4(){
+        Assert.assertEquals(contactMassage.getTextStatus(),"Thank You for contact us");
+        extentTest.log(LogStatus.PASS, "TCC.JC.0184 Data contact berhasil disimpan");
+    }
 
 }

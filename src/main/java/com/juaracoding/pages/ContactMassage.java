@@ -41,6 +41,20 @@ public class ContactMassage {
     @FindBy(xpath = "/html/body/main/section/div/div/div/div[3]/div/alert")
     WebElement txtstatus;
 
+    @FindBy(xpath = "//*[@id=\"frmcontact\"]/div[1]/div")
+    WebElement txtstatustidakberhasil;
+
+    @FindBy(xpath = "//*[@id=\"frmcontact\"]/div[2]/div")
+    WebElement txtstatusemailtidakberhasil;
+
+    @FindBy(xpath = "//*[@id=\"frmcontact\"]/div[3]/div")
+    WebElement txtstatustidakberhasilphone;
+
+    @FindBy(xpath = "//*[@id=\"frmcontact\"]/div[4]/div")
+    WebElement txtstatultidakberhasilsubject;
+
+
+
 
 
 
@@ -78,10 +92,27 @@ public class ContactMassage {
     }
 
     public String getTextStatus(){
+
         return txtstatus.getText();
     }
 
+    public String getTextStatustidakberhasil(){
 
+        return txtstatustidakberhasil.getText();
+    }
+
+    public String getTextStatusEmailtidakberhasil(){
+
+        return txtstatusemailtidakberhasil.getText();
+    }
+    public String getTextStatustidakberhasilphone(){
+
+        return txtstatustidakberhasilphone.getText();
+    }
+    public String getTextStatustidakberhasilsubject(){
+
+        return txtstatultidakberhasilsubject.getText();
+    }
 }
 
 
