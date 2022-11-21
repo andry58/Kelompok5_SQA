@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8497166e-24af-4dfd-a2b0-a6f59a270c68" name="Changes" comment="commit Testimonial9">
+    <list default="true" id="8497166e-24af-4dfd-a2b0-a6f59a270c68" name="Changes" comment="update20nov2022">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/MenuContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/MenuContactMassage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/07.ContactMassage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/07.MenuContactmassages.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestMenucontactmassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestMenucontactmassage.java" afterDir="false" />
     </list>
@@ -236,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668934218727</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update20nov2022">
+      <created>1669021079494</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669021079494</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +281,8 @@
     <MESSAGE value="Update tetimonial1" />
     <MESSAGE value="commit Testimonial2" />
     <MESSAGE value="commit Testimonial5" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Testimonial5" />
+    <MESSAGE value="update20nov2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="update20nov2022" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

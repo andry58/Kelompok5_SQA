@@ -28,7 +28,7 @@ public class MenuContactMassage {
     WebElement btnnext;
 
 
-    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/table")
+    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[1]/h3")
     WebElement gettexttable;
 
 

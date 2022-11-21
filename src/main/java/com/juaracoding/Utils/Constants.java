@@ -14,6 +14,8 @@ public class Constants {
 
     public static final String PUBLISH_URL ="https://dev.ptdika.com/web_jc_v2/home";
 
+    public static final String Log=  "https://dev.ptdika.com/web_jc_v2/index.php/admin";
+
 
 
 

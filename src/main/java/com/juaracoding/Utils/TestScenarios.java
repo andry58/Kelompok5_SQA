@@ -54,10 +54,11 @@ public enum TestScenarios {
     T183("TCC.JC.0183 Add Contact Massage Tidak Input  Massage"),
     T184("TCC.JC.0184 Add Contact Massage Clik button Sand Massege"),
     T185("TCC.JC.0185 Menu Contact Massage"),
-    T186("TCC.JC.0186 Short Menu Contact massage  Pilih  Data Contact by Nama")
-
-
-
+    T186("TCC.JC.0186 Short Menu Contact massage  Pilih  Data Contact by Nama"),
+    T187("TCC.JC.0187 Short Menu Contact massage  Pilih Data Contact by Email"),
+    T188("TCC.JC.0188 Short Menu Contact massage  Pilih Data Contact by Nomor Telepon"),
+    T189("TCC.JC.0189 Short Menu Contact massage  Pilih Data Contact by Subjek"),
+    T190("TCC.JC.0190Short Menu Contact massage Pilih Data Contact by Pesan")
     ;
 
 
