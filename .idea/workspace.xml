@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="Update tetimonial1">
+    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="commit Testimonial5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/MenuContactMassage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Feature/07.MenuContactmassages.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestMenucontactmassage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/ContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/ContactMassage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestContactMassage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Bramantyo" />
+        <entry key="$PROJECT_DIR$" value="Test_merge" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,15 +83,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.RunnerTest">
-    <configuration name="Scenario: Add  Testimonial" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TCC.JC.011 Add Testimonial uploud foto format selain gambar" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Feature/02.Testimonial.feature" />
       <option name="GLUE" value="com.juaracoding.cucumber.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Kelompok5_SQA" />
-      <option name="NAME_FILTER" value="^Add  Testimonial$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add  Testimonial$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add  Testimonial" />
+      <option name="NAME_FILTER" value="^TCC\.JC\.011 Add Testimonial uploud foto format selain gambar$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TCC\.JC\.011 Add Testimonial uploud foto format selain gambar$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TCC.JC.011 Add Testimonial uploud foto format selain gambar" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -99,15 +103,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TCC.JC.011 Add Testimonial uploud foto format selain gambar" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TCC.JC.0177 Add Contact Massage Tidak Input Nomor Telepon" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Feature/02.Testimonial.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Feature/07.ContactMassage.feature" />
       <option name="GLUE" value="com.juaracoding.cucumber.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Kelompok5_SQA" />
-      <option name="NAME_FILTER" value="^TCC\.JC\.011 Add Testimonial uploud foto format selain gambar$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TCC\.JC\.011 Add Testimonial uploud foto format selain gambar$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TCC.JC.011 Add Testimonial uploud foto format selain gambar" />
+      <option name="NAME_FILTER" value="^TCC\.JC\.0177 Add Contact Massage Tidak Input Nomor Telepon$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TCC\.JC\.0177 Add Contact Massage Tidak Input Nomor Telepon$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TCC.JC.0177 Add Contact Massage Tidak Input Nomor Telepon" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TCC.JC.0178 Add Contact Massage Input Subject" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Feature/07.ContactMassage.feature" />
+      <option name="GLUE" value="com.juaracoding.cucumber.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Kelompok5_SQA" />
+      <option name="NAME_FILTER" value="^TCC\.JC\.0178 Add Contact Massage Input Subject$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TCC\.JC\.0178 Add Contact Massage Input Subject$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TCC.JC.0178 Add Contact Massage Input Subject" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -159,10 +183,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RunnerTest" />
+        <item itemvalue="Cucumber Java.Scenario: TCC.JC.0177 Add Contact Massage Tidak Input Nomor Telepon" />
+        <item itemvalue="Cucumber Java.Scenario: TCC.JC.0178 Add Contact Massage Input Subject" />
         <item itemvalue="Cucumber Java.Scenario: TCC.JC.024 Edit Testimonial Foto yang dipilih memiliki size maksimal 1 MB" />
         <item itemvalue="Cucumber Java.Scenario: TCC.JC.011 Add Testimonial uploud foto format selain gambar" />
-        <item itemvalue="Cucumber Java.Scenario: Add  Testimonial" />
-        <item itemvalue="TestNG.RunnerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668754344817</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit Testimonial2">
+      <created>1668867759054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668867759054</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit Testimonial5">
+      <created>1668934218727</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668934218727</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +255,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="AndriYansyah" />
+                        <option value="WidyaFitri" />
                       </list>
                     </value>
                   </entry>
@@ -233,6 +271,19 @@
     <MESSAGE value="TempletAwal" />
     <MESSAGE value="commit modul login" />
     <MESSAGE value="Update tetimonial1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update tetimonial1" />
+    <MESSAGE value="commit Testimonial2" />
+    <MESSAGE value="commit Testimonial5" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit Testimonial5" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
