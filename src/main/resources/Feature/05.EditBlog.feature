@@ -7,6 +7,12 @@ Feature: Edit Blog
     Then TCC.JC.160 User click button edit blog
 
 
+  Scenario: TCC.JC.161 User Edit Judul Blog
+    When TCC.JC.161 User go to web Edit Blog
+    And TCC.JC.161 User edit judul blog
+
+    Then TCC.JC.161 User click button edit blog
+
   Scenario: TCC.JC.162 User Edit Active Blog
     When TCC.JC.162 User go to web Edit Blog
     And TCC.JC.162 User edit Active blog

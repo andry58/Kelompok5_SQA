@@ -22,12 +22,27 @@ public class TestTambahBlog {
         extentTest = Hooks.extentTest;
     }
 
+    //Input Judul Blog  =========================================================================================================
+    @When("TCC.JC.142 User Menuju Tambah Blog")
+    public void TCCJC142_User_Menuju_Tambah_Blog() {
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
+        tambahBlog.setButtonBlog();
+        extentTest.log(LogStatus.PASS, "TCC.JC.142 User Menuju Tambah Blog");
+    }
+
+    @Then("TCC.JC.142 User Tampil Tambah Blog")
+    public void TCCJC142_User_Tampil_Tambah_Blog() {
+        Assert.assertEquals(tambahBlog.settxtlistblog(), "List Blog");
+        extentTest.log(LogStatus.PASS,"TCC.JC.142 User Tampil Tambah Blog");
+    }
+
+
 
     //Input Judul Blog  =========================================================================================================
     @When("TCC.JC.148 User go to web Tambah Blog")
     public void user_go_to_web_Tambah_Benefit() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -78,8 +93,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.149 User go to web Tambah Blog")
     public void TCCJC149_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -130,8 +144,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.150 User go to web Tambah Blog")
     public void TCCJC150_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -182,8 +195,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.151 User go to web Tambah Blog")
     public void TCCJC151_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -234,8 +246,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.152 User go to web Tambah Blog")
     public void TCCJC152_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -286,8 +297,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.153 User go to web Tambah Blog")
     public void TCCJC153_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -338,8 +348,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.154 User go to web Tambah Blog")
     public void TCCJC154_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -390,8 +399,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.155 User go to web Tambah Blog")
     public void TCCJC155_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -442,8 +450,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.156 User go to web Tambah Blog")
     public void TCCJC156_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }
@@ -495,8 +502,7 @@ public class TestTambahBlog {
 
     @When("TCC.JC.157 User go to web Tambah Blog")
     public void TCCJC157_User_gotoweb_Tambah_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/add");
-        //editBenefit.setbuttonedit();
+        tambahBlog.setButtontambahblog();
         extentTest.log(LogStatus.PASS, "User on menu Home");
 
     }

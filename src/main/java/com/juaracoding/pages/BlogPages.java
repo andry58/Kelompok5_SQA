@@ -74,6 +74,23 @@ public class BlogPages {
     @FindBy(xpath = "//input[@name='uploadedFile']")
     WebElement btnedit;
 
+
+    //Form Edit Blog ===========================================================================================================================================
+
+    @FindBy(xpath = "//*[@id=\"simple-bar\"]/div[1]/div[2]/div/div/div/li[4]/a")
+    WebElement buttonhomeblog;
+
+    @FindBy(xpath = "//input[@name='uploadedFile']")
+    WebElement buttonBlog;
+
+    @FindBy(xpath = "//h3[normalize-space()='List Blog']")
+    WebElement txtListBlog;
+
+    @FindBy(xpath = "//a[@class='btn btn-gradient']")
+    WebElement buttontambahblog;
+
+
+
     //Form Input Blog ===========================================================================================================================================
 
     public void setFoto(String foto)
@@ -158,4 +175,25 @@ public class BlogPages {
         js.executeScript("arguments[0].click();", btnedit);
     }
 
+    //Button Blog ===========================================================================================================================================
+
+    public void setButtonBlog ()
+    {
+        buttonBlog.click();
+    }
+
+    public String settxtlistblog ()
+    {
+        return txtListBlog.getText();
+    }
+
+    public void setButtontambahblog()
+    {
+        buttontambahblog.click();
+    }
+
+    public void setBtnHomeBlog()
+    {
+        buttonhomeblog.click();
+    }
 }

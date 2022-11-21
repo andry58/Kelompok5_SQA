@@ -24,7 +24,7 @@ public class TestJudulEmpat {
     // Tambah Benefit Judul Empat
     @When("TCC.JC.087 User go to web Tambah Benefit")
     public void user_go_to_web_tambah_benefit_delapantujuh() {
-        driver.get(Constants.URL);
+        tambahBenefit.setbtntambahbenefit();
         extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
     }
@@ -95,7 +95,7 @@ public class TestJudulEmpat {
 
     @When("TCC.JC.088 User go to web Tambah Benefit")
     public void user_go_to_web_Tambah_Benefit_delapandelapan() {
-        driver.get(Constants.URL);
+        tambahBenefit.setbtntambahbenefit();
         extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
     }
@@ -166,7 +166,7 @@ public class TestJudulEmpat {
 
     @When("TCC.JC.089 User go to web Tambah Benefit")
     public void user_go_to_web_Tambah_Benefit_delapansembilan() {
-        driver.get(Constants.URL);
+        tambahBenefit.setbtntambahbenefit();
         extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
     }

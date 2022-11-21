@@ -47,6 +47,7 @@ public enum TestScenarios {
     T42("TCC.JC.156 User Content Blog"),
     T43("TCC.JC.157 Kosongkan Content Blog"),
     T44("TCC.JC.160 User Edit Foto Blog"),
+    T45("TCC.JC.161 User Edit Judul Blog"),
     T46("TCC.JC.162 User Edit Active Blog"),
     T47("TCC.JC.163 User Edit Noactive Blog"),
     T48("TCC.JC.164 User Edit Settohome Yes Blog"),

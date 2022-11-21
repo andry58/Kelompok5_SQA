@@ -1,8 +1,14 @@
 
 Feature: Tambah Benfit
 
+  Scenario: TCC.JC.081 User Buka Menu Benefit
+    When TCC.JC.081 User Klik Tombol Home
+   Then TCC.JC.081 User Klik Tombol Benefit
+
+
   Scenario: User tambah data benefit
     When User go to web Tambah Benefit
+    And TCC.JC.082 Input Data Benefit
     And User input judul satu
     And User input deskripsi satu
     And User input judul dua

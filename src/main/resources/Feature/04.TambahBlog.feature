@@ -1,5 +1,10 @@
 Feature: Tambah Blog
 
+  Scenario: TCC.JC.142 User Masuk Ke Menu Blog
+    When TCC.JC.142 User Menuju Tambah Blog
+
+    Then TCC.JC.142 User Tampil Tambah Blog
+
   Scenario: TCC.JC.148 User Input Judul Blog
     When TCC.JC.148 User go to web Tambah Blog
     And TCC.JC.148 User input foto

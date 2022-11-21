@@ -68,12 +68,11 @@ public class TestEditBlog {
         extentTest.log(LogStatus.PASS, "TCC.JC.161 User edit foto blog");
     }
 
- //   @Then("TCC.JC.161 User click button edit blog")
- //   public void TCCJCC161_User_click_button_edit() {
-        //  driver.get(Constants.URL);
-  //      editblog.setbtnsimpanedit();
-   //     extentTest.log(LogStatus.PASS, "TCC.JC.161 User click button edit blog");
-    //}
+  @Then("TCC.JC.161 User click button edit blog")
+  public void TCCJCC161_User_click_button_edit() {
+        //  driver.get(Constants.URL);editblog.setbtnsimpanedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.161 User click button edit blog");
+   }
 
     //Edit Publish Active Blog ========================================================================================================================================================================
 

@@ -104,8 +104,30 @@ public class TambahBenefitPages {
     @FindBy(xpath = "//alert[@class='alert alert-success']")
     WebElement txtberhasiledit;
 
+    @FindBy(xpath = "//*[@id=\"frmregister\"]/div[1]/h4")
+    WebElement txtmasukledit;
+    //*[@id="frmregister"]/div[1]/h4
 
-    // Untuk Input
+    // Button Home dan Input ===========================================================================================
+
+    @FindBy(xpath = "//*[@id=\"simple-bar\"]/div[1]/div[2]/div/div/div/li[4]/a")
+    WebElement buttonhome;
+
+    @FindBy(xpath = "//*[@id=\"simple-bar\"]/div[1]/div[2]/div/div/div/li[4]/ul/li[3]/a")
+    WebElement buttonbenefit;
+
+    @FindBy(xpath = "//a[@class='btn btn-gradient']")
+    WebElement buttonembhbenefit;
+
+    @FindBy(xpath = "//h3[normalize-space()='Data Benefit']")
+    WebElement txttambahdatabenefit;
+
+    @FindBy(xpath = "//h4[@class='card-title mb-0']")
+    WebElement txttambahisibenefit;
+
+
+
+    // Untuk Input =====================================================================================================
     public void setjudulsatu(String judulsatu) {
         this.tboxjudulsatu.sendKeys(judulsatu);
     }
@@ -149,17 +171,14 @@ public class TambahBenefitPages {
         js.executeScript("arguments[0].click();", buttonsimpan);
     }
 
-    //public String settextdatatersimpan() {
-    //return txtdatadisimpan.getText();
-    // }
 
 
     // Untuk Edit========================================================================================================
 
     public void setbuttonedit() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", btnedit);
-        //btnedit.click();
+        //JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("arguments[0].click();", btnedit);
+        btnedit.click();
     }
         public void setjudulsatuedit(String judulsatuedit){
             this.judulsatuedit.clear();
@@ -202,4 +221,39 @@ public class TambahBenefitPages {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("arguments[0].click();", buttonedit);
         }
+
+        // Button Home dll =============================================================================================
+
+        public void setbtnhome()
+        {
+            //JavascriptExecutor js = (JavascriptExecutor) driver;
+            //js.executeScript("arguments[0].click();", buttonhome);
+             buttonhome.click();
+        }
+        public void setbtnenefit()
+         {
+             //JavascriptExecutor js = (JavascriptExecutor) driver;
+             //js.executeScript("arguments[0].click();", buttonbenefit);
+             buttonbenefit.click();
+         }
+        public void setbtntambahbenefit()
+        {
+            //JavascriptExecutor js = (JavascriptExecutor) driver;
+            //js.executeScript("arguments[0].click();", buttonembhbenefit);
+            buttonembhbenefit.click();
+        }
+
+        public String settextdatabenefit() {
+        return txttambahdatabenefit.getText();
+        }
+
+        public String settextisibenefit()
+        {
+        return txttambahisibenefit.getText();
+        }
+
+    public String setmasukeditbenefit()
+    {
+        return txtmasukledit.getText();
     }
+}

@@ -24,61 +24,70 @@ public class TestJudulDua {
     // Tambah Benefit Judul Dua
     @When("TCC.JC.075 User go to web Tambah Benefit")
     public void user_go_to_web_tambah_benefit_tujuhlima() {
-        driver.get(Constants.URL);
+        tambahBenefit.setbtntambahbenefit();
         extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
     }
 
     @And("TCC.JC.075 User input judul satu")
     public void user_input_judul_satu_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setjudulsatu("input data");
         extentTest.log(LogStatus.PASS,"User input judul satu");
     }
 
     @And("TCC.JC.075 User input deskripsi satu")
     public void user_input_deskripsi_satu_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsisatu("harusnya kosong");
         extentTest.log(LogStatus.PASS,"User input deskripsi satu");
     }
 
     @And("TCC.JC.075 User input judul dua")
     public void user_input_judul_dua_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setjuduldua("input data");
         extentTest.log(LogStatus.PASS,"User input judul dua");
     }
 
     @And("TCC.JC.075 User input deskripsi dua")
     public void user_input_deskripsi_dua_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsidua("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi dua");
     }
 
     @And("TCC.JC.075 User input judul tiga")
     public void user_input_judul_tiga_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setjudultiga("input data");
         extentTest.log(LogStatus.PASS,"User input judul tiga");
     }
 
     @And("TCC.JC.075 User input deskripsi tiga")
     public void user_input_deskripsi_tiga_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsitiga("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi tiga");
     }
 
     @And("TCC.JC.075 User input judul empat")
     public void user_input_judul_empat_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setjudulempat("input data");
         extentTest.log(LogStatus.PASS,"User input judul empat");
     }
 
     @And("TCC.JC.075 User input deskripsi empat")
     public void user_input_deskripsi_empat_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsiempat("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi empat");
     }
 
     @And("TCC.JC.075 User input publish")
     public void user_input_publish_tujuhlima() {
+        Hooks.delay(1);
         tambahBenefit.setpublish();
         extentTest.log(LogStatus.PASS,"User input publish");
     }
@@ -95,61 +104,70 @@ public class TestJudulDua {
 
     @When("TCC.JC.076 User go to web Tambah Benefit")
     public void user_go_to_web_Tambah_Benefit_tujuhenam() {
-        driver.get(Constants.URL);
+        tambahBenefit.setbtntambahbenefit();
         extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
     }
 
     @And("TCC.JC.076 User input judul satu")
     public void user_input_judul_satu_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setjudulsatu("input data");
         extentTest.log(LogStatus.PASS,"User input judul satu");
     }
 
     @And("TCC.JC.076 User input deskripsi satu")
     public void user_input_deskripsi_satu_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsisatu("Deskripsi 123");
         extentTest.log(LogStatus.PASS,"User input deskripsi satu");
     }
 
     @And("TCC.JC.076 User input judul dua")
     public void user_input_judul_dua_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setjuduldua("input data");
         extentTest.log(LogStatus.PASS,"User input judul dua");
     }
 
     @And("TCC.JC.076 User input deskripsi dua")
     public void user_input_deskripsi_dua_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsidua("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi dua");
     }
 
     @And("TCC.JC.076 User input judul tiga")
     public void user_input_judul_tiga_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setjudultiga("input data");
         extentTest.log(LogStatus.PASS,"User input judul tiga");
     }
 
     @And("TCC.JC.076 User input deskripsi tiga")
     public void user_input_deskripsi_tiga_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsitiga("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi tiga");
     }
 
     @And("TCC.JC.076 User input judul empat")
     public void user_input_judul_empat_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setjudulempat("input data");
         extentTest.log(LogStatus.PASS,"User input judul empat");
     }
 
     @And("TCC.JC.076 User input deskripsi empat")
     public void user_input_deskripsi_empat_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsiempat("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi empat");
     }
 
     @And("TCC.JC.076 User input publish")
     public void user_input_publish_tujuhenam() {
+        Hooks.delay(1);
         tambahBenefit.setpublish();
         extentTest.log(LogStatus.PASS,"User input publish");
     }
@@ -166,61 +184,70 @@ public class TestJudulDua {
 
     @When("TCC.JC.077 User go to web Tambah Benefit")
     public void user_go_to_web_Tambah_Benefit_tujuhempat() {
-        driver.get(Constants.URL);
+        tambahBenefit.setbtntambahbenefit();
         extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
     }
 
     @And("TCC.JC.077 User input judul satu")
     public void user_input_judul_satu_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setjudulsatu("input data");
         extentTest.log(LogStatus.PASS,"User input judul satu");
     }
 
     @And("TCC.JC.077 User input deskripsi satu")
     public void user_input_deskripsi_satu_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsisatu("Deskripsi @@@");
         extentTest.log(LogStatus.PASS,"User input deskripsi satu");
     }
 
     @And("TCC.JC.077 User input judul dua")
     public void user_input_judul_dua_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setjuduldua("input data");
         extentTest.log(LogStatus.PASS,"User input judul dua");
     }
 
     @And("TCC.JC.077 User input deskripsi dua")
     public void user_input_deskripsi_dua_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsidua("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi dua");
     }
 
     @And("TCC.JC.077 User input judul tiga")
     public void user_input_judul_tiga_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setjudultiga("input data");
         extentTest.log(LogStatus.PASS,"User input judul tiga");
     }
 
     @And("TCC.JC.077 User input deskripsi tiga")
     public void user_input_deskripsi_tiga_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsitiga("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi tiga");
     }
 
     @And("TCC.JC.077 User input judul empat")
     public void user_input_judul_empat_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setjudulempat("input data");
         extentTest.log(LogStatus.PASS,"User input judul empat");
     }
 
     @And("TCC.JC.077 User input deskripsi empat")
     public void user_input_deskripsi_empat_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsiempat("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi empat");
     }
 
     @And("TCC.JC.077 User input publish")
     public void user_input_publish_tujuhempat() {
+        Hooks.delay(1);
         tambahBenefit.setpublish();
         extentTest.log(LogStatus.PASS,"User input publish");
     }
