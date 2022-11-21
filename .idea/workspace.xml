@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="commit Testimonial5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/MenuContactMassage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Feature/07.MenuContactmassages.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestMenucontactmassage.java" afterDir="false" />
+    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="commit Testimonial8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/ContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/ContactMassage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/MenuContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/MenuContactMassage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/02.Testimonial.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/02.TestimonialEdit.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/07.ContactMassage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/07.MenuContactmassages.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestContactMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestContactMassage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestEditTestimonial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestEditTestimonial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestMenucontactmassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/TestMenucontactmassage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,8 +186,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RunnerTest" />
-        <item itemvalue="Cucumber Java.Scenario: TCC.JC.0177 Add Contact Massage Tidak Input Nomor Telepon" />
         <item itemvalue="Cucumber Java.Scenario: TCC.JC.0178 Add Contact Massage Input Subject" />
+        <item itemvalue="Cucumber Java.Scenario: TCC.JC.0177 Add Contact Massage Tidak Input Nomor Telepon" />
         <item itemvalue="Cucumber Java.Scenario: TCC.JC.024 Edit Testimonial Foto yang dipilih memiliki size maksimal 1 MB" />
         <item itemvalue="Cucumber Java.Scenario: TCC.JC.011 Add Testimonial uploud foto format selain gambar" />
       </list>
@@ -280,8 +283,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/juaracoding/cucumber/step_definitions/RunnerTest.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
+          <line>15</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
