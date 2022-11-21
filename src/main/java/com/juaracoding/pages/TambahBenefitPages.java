@@ -54,9 +54,6 @@ public class TambahBenefitPages {
     @FindBy(xpath = "//textarea[@name='deskripsi_4']")
     WebElement tboxdeskripsiempat;
 
-
-    //@FindBy(id = "exampleFormControlSelect9")
-
     @FindBy(xpath = "//*[@id='exampleFormControlSelect9']")
     WebElement cbpublish;
 
@@ -76,21 +73,39 @@ public class TambahBenefitPages {
     @FindBy(xpath = "//*[@id=\"judul_1\"]")
     WebElement judulsatuedit;
 
-    @FindBy(xpath = "//*[@id=\"judul_1\"]")
+    @FindBy(xpath = "//textarea[@id='deskripsi_1']")
     WebElement deskripsisatuedit;
 
-    @FindBy(xpath = "//*[@id=\"judul_1\"]")
+    @FindBy(xpath = "//input[@id='judul_2']")
     WebElement judulduaedit;
 
-    @FindBy(xpath = "//*[@id=\"judul_1\"]")
+    @FindBy(xpath = "//textarea[@id='deskripsi_2']")
     WebElement deskripsiduaedit;
 
-    @FindBy(xpath = "//*[@id=\"judul_1\"]")
+    @FindBy(xpath = "//input[@id='judul_3']")
     WebElement judultigaedit;
 
-    @FindBy(xpath = "//*[@id=\"judul_1\"]")
-    WebElement jdsatuedit;
+    @FindBy(xpath = "//textarea[@id='deskripsi_3']")
+    WebElement deskripsitigaedit;
 
+    @FindBy(xpath = "//input[@id='judul_4']")
+    WebElement judulempatedit;
+
+    @FindBy(xpath = "//textarea[@id='deskripsi_4']")
+    WebElement deskripsiempatedit;
+
+    @FindBy(xpath = "//select[@id='exampleFormControlSelect9']")
+    WebElement publishedit;
+
+    @FindBy(xpath = "//input[@name='mysubmit']")
+    WebElement buttonedit;
+
+
+    @FindBy(xpath = "//alert[@class='alert alert-success']")
+    WebElement txtberhasiledit;
+
+
+    // Untuk Input
     public void setjudulsatu(String judulsatu) {
         this.tboxjudulsatu.sendKeys(judulsatu);
     }
@@ -110,6 +125,7 @@ public class TambahBenefitPages {
     public void setjudultiga(String judultiga) {
         this.tboxjudultiga.sendKeys(judultiga);
     }
+
     public void setdeskripsitiga(String deskripsitiga) {
         this.tboxdeskripsitiga.sendKeys(deskripsitiga);
     }
@@ -122,7 +138,6 @@ public class TambahBenefitPages {
         this.tboxdeskripsiempat.sendKeys(deskripsiempat);
     }
 
-
     public void setpublish() {
 
         //this.cbpublish.sendKeys(publish);
@@ -132,12 +147,59 @@ public class TambahBenefitPages {
     public void clickButtonSimpan() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", buttonsimpan);
-
-
     }
 
     //public String settextdatatersimpan() {
-        //return txtdatadisimpan.getText();
-   // }
+    //return txtdatadisimpan.getText();
+    // }
 
-}
+
+    // Untuk Edit========================================================================================================
+
+    public void setbuttonedit() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", btnedit);
+        //btnedit.click();
+    }
+        public void setjudulsatuedit(String judulsatuedit){
+            this.judulsatuedit.clear();
+            this.judulsatuedit.sendKeys(judulsatuedit);
+        }
+
+        public void setdeskripsisatuedit (String deskripsisatuedit){
+            this.deskripsiduaedit.clear();
+            this.deskripsisatuedit.sendKeys(deskripsisatuedit);
+        }
+        public void setjudulduaedit (String judulduaedit){
+            this.judulduaedit.clear();
+            this.judulduaedit.sendKeys(judulduaedit);
+        }
+        public void setdeskripsiduaedit (String deskripsiduaedit){
+            this.deskripsiduaedit.clear();
+            this.deskripsiduaedit.sendKeys(deskripsiduaedit);
+        }
+        public void setjudultigaedit (String judultigaedit){
+            this.judultigaedit.clear();
+            this.judultigaedit.sendKeys(judultigaedit);
+        }
+        public void setdeskripsitigaedit (String deskripsitigaedit){
+            this.deskripsitigaedit.clear();
+            this.deskripsitigaedit.sendKeys(deskripsitigaedit);
+        }
+        public void setjudulempatedit (String judulempatedit){
+            this.judulempatedit.clear();
+            this.judulempatedit.sendKeys(judulempatedit);
+        }
+        public void setdeskripsiempatedit (String deskripsiempatedit){
+            this.deskripsiempatedit.clear();
+            this.deskripsiempatedit.sendKeys(deskripsiempatedit);
+        }
+
+        public void setPublishedit () {
+            publishedit.sendKeys("Active" + ENTER);
+        }
+        public void kliksiempatedit () {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", buttonedit);
+        }
+    }
