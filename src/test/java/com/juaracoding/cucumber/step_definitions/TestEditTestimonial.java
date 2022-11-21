@@ -41,7 +41,7 @@ public class TestEditTestimonial {
     //edit
     @When("TCC.JC.024 Admin upload foto Ulang size maksimal 1 MB")
     public void admin_upload_foto_ulang() {
-        editTestimonial.Pilihulang("C:\\Users\\KPI\\Downloads\\image001 (1).Jpg");
+        editTestimonial.Pilihulang("C:\\Users\\KPI\\Downloads\\download.Jpg");
         extentTest.log(LogStatus.PASS, "TCC.JC.024 Admin upload foto Ulang size maksimal 1 MB");
     }
 
