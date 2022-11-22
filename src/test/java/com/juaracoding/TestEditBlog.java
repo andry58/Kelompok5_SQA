@@ -27,13 +27,21 @@ public class TestEditBlog {
 
     @When("TCC.JC.160 User go to web Edit Blog")
     public void TCCJC160_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.160 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
         //extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
+    }
+
+    @And("TCC.JC.160 User pilih edit blog")
+    public void TCCJC160_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.160 User edit foto blog");
     }
 
     @And("TCC.JC.160 User edit foto blog")
@@ -53,8 +61,9 @@ public class TestEditBlog {
 
     @When("TCC.JC.161 User go to web Edit Blog")
     public void TCCJC161_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.161 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
@@ -62,9 +71,17 @@ public class TestEditBlog {
 
     }
 
+    @And("TCC.JC.161 User pilih edit blog")
+    public void TCCJC161_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.161 User pilih edit blog");
+    }
+
     @And("TCC.JC.161 User edit judul blog")
     public void TCCJC161_User_edit_judul_blog() {
-        editblog.setjudublogedit("Ganti Judul Blog");
+        editblog.setjudublogedit("coba ganti");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "TCC.JC.161 User edit foto blog");
     }
 
@@ -78,8 +95,9 @@ public class TestEditBlog {
 
     @When("TCC.JC.162 User go to web Edit Blog")
     public void TCCJC162_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.162 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
@@ -87,9 +105,16 @@ public class TestEditBlog {
 
     }
 
+    @And("TCC.JC.162 User pilih edit blog")
+    public void TCCJC162_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.162 User pilih edit blog");
+    }
     @And("TCC.JC.162 User edit Active blog")
     public void TCCJC162_User_edit_Active_blog() {
         editblog.setpublishblogedit();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "TCC.JC.162 User edit foto blog");
     }
 
@@ -104,8 +129,9 @@ public class TestEditBlog {
 
     @When("TCC.JC.163 User go to web Edit Blog")
     public void TCCJC163_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.163 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
@@ -113,9 +139,19 @@ public class TestEditBlog {
 
     }
 
+    @And("TCC.JC.163 User pilih edit blog")
+    public void TCCJC163_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+
+        extentTest.log(LogStatus.PASS, "TCC.JC.163 User pilih edit blog");
+    }
+
     @And("TCC.JC.163 User edit Noactive blog")
     public void TCCJC163_User_edit_Noactive_blog() {
         editblog.setpublishblogedit();
+        Hooks.delay(1);
+        Assert.assertEquals(editblog.settxtisieditblog(), "Data Berhasil Disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.163 User edit foto blog");
     }
 
@@ -123,6 +159,7 @@ public class TestEditBlog {
     public void TCCJCC163_User_click_button_edit() {
         //  driver.get(Constants.URL);
         editblog.setbtnsimpanedit();
+        Assert.assertEquals(editblog.settxtisieditblog(), "Data Berhasil Disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.162 163 click button edit blog");
     }
 
@@ -130,8 +167,9 @@ public class TestEditBlog {
 
     @When("TCC.JC.164 User go to web Edit Blog")
     public void TCCJC164_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.164 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
@@ -139,9 +177,17 @@ public class TestEditBlog {
 
     }
 
+    @And("TCC.JC.164 User pilih edit blog")
+    public void TCCJC164_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.164 User pilih edit blog");
+    }
+
     @And("TCC.JC.164 User edit Noactive blog")
     public void TCCJC164_User_settohome_yes_blog() {
         editblog.setsettohomeedit();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "TCC.JC.164 User edit foto blog");
     }
 
@@ -149,6 +195,7 @@ public class TestEditBlog {
     public void TCCJCC164_User_click_button_edit() {
         //  driver.get(Constants.URL);
         editblog.setbtnsimpanedit();
+        Assert.assertEquals(editblog.settxtisieditblog(), "Data Berhasil Disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.164 click button edit blog");
     }
 
@@ -156,8 +203,9 @@ public class TestEditBlog {
 
     @When("TCC.JC.165 User go to web Edit Blog")
     public void TCCJC165_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.164 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
@@ -165,9 +213,17 @@ public class TestEditBlog {
 
     }
 
+    @And("TCC.JC.165 User pilih edit blog")
+    public void TCCJC165_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.165 User pilih edit blog");
+    }
+
     @And("TCC.JC.165 User edit Noactive blog")
     public void TCCJC165_User_settohome_yes_blog() {
         editblog.setsettohomeedit();
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "TCC.JC.165 User edit foto blog");
     }
 
@@ -175,6 +231,7 @@ public class TestEditBlog {
     public void TCCJCC165_User_click_button_edit() {
         //  driver.get(Constants.URL);
         editblog.setbtnsimpanedit();
+        Assert.assertEquals(editblog.settxtisieditblog(), "Data Berhasil Disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.165 click button edit blog");
     }
 
@@ -182,8 +239,9 @@ public class TestEditBlog {
 
     @When("TCC.JC.166 User go to web Edit Blog")
     public void TCCJC166_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.166 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
@@ -191,8 +249,16 @@ public class TestEditBlog {
 
     }
 
+    @And("TCC.JC.166 User pilih edit blog")
+    public void TCCJC166_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.166 User pilih edit blog");
+    }
+
     @And("TCC.JC.166 User edit Noactive blog")
     public void TCCJC166_User_settohome_yes_blog() {
+        Hooks.delay(1);
         editblog.setcontentpriviewedit("Ganti Content Priview");
         extentTest.log(LogStatus.PASS, "TCC.JC.166 User edit foto blog");
     }
@@ -201,6 +267,7 @@ public class TestEditBlog {
     public void TCCJCC166_User_click_button_edit() {
         //  driver.get(Constants.URL);
         editblog.setbtnsimpanedit();
+        Assert.assertEquals(editblog.settxtisieditblog(), "Data Berhasil Disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.166 click button edit blog");
     }
 
@@ -208,8 +275,9 @@ public class TestEditBlog {
 
     @When("TCC.JC.167 User go to web Edit Blog")
     public void TCCJC167_User_go_to_web_Edit_Blog() {
-        driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
+        //driver.get("https://dev.ptdika.com/web_jc_v2/admin/blogs/edit/483");
         //editBenefit.setbuttonedit();
+        editblog.setButtonBlog();
         extentTest.log(LogStatus.PASS, "TCC.JC.167 User go to web Edit Blog");
 
         //driver.get(Constants.URL);
@@ -217,8 +285,16 @@ public class TestEditBlog {
 
     }
 
+    @And("TCC.JC.167 User pilih edit blog")
+    public void TCCJC167_User_pilih_edit_blog() {
+        //editblog.setFotoedit("D:\\buatmagang2.PNG");
+        editblog.setpilihedit();
+        extentTest.log(LogStatus.PASS, "TCC.JC.167 User pilih edit blog");
+    }
+
     @And("TCC.JC.167 User edit Content blog")
     public void TCCJC167_User_content_blog() {
+        Hooks.delay(1);
         editblog.setcontentedit("Ganti content yang dimana isinya nanti akan diganti");
         extentTest.log(LogStatus.PASS, "TCC.JC.167 User edit foto blog");
     }
@@ -227,6 +303,7 @@ public class TestEditBlog {
     public void TCCJCC167_User_click_button_edit() {
         //  driver.get(Constants.URL);
         editblog.setbtnsimpanedit();
+        Assert.assertEquals(editblog.settxtisieditblog(), "Data Berhasil Disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.167 click button edit blog");
     }
 }

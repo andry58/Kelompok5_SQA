@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="update20nov2022">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Feature/02.TambahBenefit.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Feature/03.EditBenefit.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Feature/04.TambahBlog.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Feature/05.EditBlog.feature" afterDir="false" />
+    <list default="true" id="dec84d37-cb8e-4674-b2df-53a3eae9448f" name="Changes" comment="update21nov2022">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/Utils/TestScenarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/BlogPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/BlogPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/TambahBenefitPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juaracoding/pages/TambahBenefitPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/01.TambahBenefit.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/02.EditBenefit.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/03.TambahBlog.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/04.EditBlog.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/04.TambahBlog.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Feature/04.TambahBlog.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/05.EditBlog.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Feature/05.EditBlog.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestBenefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestBenefit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiDua.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiDua.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiEmpat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiEmpat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiSatu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestDeskripsiSatu.java" afterDir="false" />
@@ -31,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulEmpat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulEmpat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulSatu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulSatu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulTiga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestJudulTiga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestTambahBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/juaracoding/TestTambahBlog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668943901759</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update21nov2022">
+      <created>1669018692222</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669018692222</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +196,8 @@
     <MESSAGE value="tambahpagesdanfeature" />
     <MESSAGE value="update17nov2022" />
     <MESSAGE value="update20nov2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="update20nov2022" />
+    <MESSAGE value="update21nov2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="update21nov2022" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

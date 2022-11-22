@@ -125,6 +125,9 @@ public class TambahBenefitPages {
     @FindBy(xpath = "//h4[@class='card-title mb-0']")
     WebElement txttambahisibenefit;
 
+    //*[@id="frmregister"]/div[1]/h4
+    @FindBy(xpath = "//*[@id=\"frmregister\"]/div[1]/h4")
+    WebElement txtisieditbenefit;
 
 
     // Untuk Input =====================================================================================================
@@ -256,4 +259,10 @@ public class TambahBenefitPages {
     {
         return txtmasukledit.getText();
     }
+
+    public String settulisaneditbenefit()
+    {
+        return txtisieditbenefit.getText();
+    }
+
 }

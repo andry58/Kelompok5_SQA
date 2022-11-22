@@ -213,7 +213,7 @@ public class TestDeskripsiDua {
     @And("TCC.JC.080 User input deskripsi dua")
     public void user_input_deskripsi_dua_delapanpuluh() {
         Hooks.delay(1);
-        tambahBenefit.setdeskripsidua("input data");
+        tambahBenefit.setdeskripsidua("input data Simbol @@@");
         extentTest.log(LogStatus.PASS,"User input deskripsi dua");
     }
 
@@ -255,6 +255,7 @@ public class TestDeskripsiDua {
     @Then("TCC.JC.080 User click button simpan")
     public void user_click_button_simpan_delapanpuluh() {
         tambahBenefit.clickButtonSimpan();
+        Assert.assertEquals(tambahBenefit.settextdatabenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS,"User click button simpan");
     }
 

@@ -102,48 +102,56 @@ public class TestJudulSatu {
 
     @And("TCC.JC.070 User input judul satu")
     public void user_input_judul_satu_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setjudulsatu("Judul 123");
         extentTest.log(LogStatus.PASS,"User input judul satu");
     }
 
     @And("TCC.JC.070 User input deskripsi satu")
     public void user_input_deskripsi_satu_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsisatu("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi satu");
     }
 
     @And("TCC.JC.070 User input judul dua")
     public void user_input_judul_dua_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setjuduldua("input data");
         extentTest.log(LogStatus.PASS,"User input judul dua");
     }
 
     @And("TCC.JC.070 User input deskripsi dua")
     public void user_input_deskripsi_dua_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsidua("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi dua");
     }
 
     @And("TCC.JC.070 User input judul tiga")
     public void user_input_judul_tiga_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setjudultiga("input data");
         extentTest.log(LogStatus.PASS,"User input judul tiga");
     }
 
     @And("TCC.JC.070 User input deskripsi tiga")
     public void user_input_deskripsi_tiga_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsitiga("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi tiga");
     }
 
     @And("TCC.JC.070 User input judul empat")
     public void user_input_judul_empat_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setjudulempat("input data");
         extentTest.log(LogStatus.PASS,"User input judul empat");
     }
 
     @And("TCC.JC.070 User input deskripsi empat")
     public void user_input_deskripsi_empat_tujuhpuluh() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsiempat("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi empat");
     }
@@ -166,6 +174,7 @@ public class TestJudulSatu {
 
     @When("TCC.JC.071 User go to web Tambah Benefit")
     public void user_go_to_web_Tambah_Benefit_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setbtntambahbenefit();
         extentTest.log(LogStatus.PASS, "User go to web Tambah Benefit");
 
@@ -173,48 +182,56 @@ public class TestJudulSatu {
 
     @And("TCC.JC.071 User input judul satu")
     public void user_input_judul_satu_tujuhsatuh() {
+        Hooks.delay(1);
         tambahBenefit.setjudulsatu("Judul @@@");
         extentTest.log(LogStatus.PASS,"User input judul satu");
     }
 
     @And("TCC.JC.071 User input deskripsi satu")
     public void user_input_deskripsi_satu_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsisatu("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi satu");
     }
 
     @And("TCC.JC.071 User input judul dua")
     public void user_input_judul_dua_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setjuduldua("input data");
         extentTest.log(LogStatus.PASS,"User input judul dua");
     }
 
     @And("TCC.JC.071 User input deskripsi dua")
     public void user_input_deskripsi_dua_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsidua("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi dua");
     }
 
     @And("TCC.JC.071 User input judul tiga")
     public void user_input_judul_tiga_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setjudultiga("input data");
         extentTest.log(LogStatus.PASS,"User input judul tiga");
     }
 
     @And("TCC.JC.071 User input deskripsi tiga")
     public void user_input_deskripsi_tiga_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsitiga("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi tiga");
     }
 
     @And("TCC.JC.071 User input judul empat")
     public void user_input_judul_empat_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setjudulempat("input data");
         extentTest.log(LogStatus.PASS,"User input judul empat");
     }
 
     @And("TCC.JC.071 User input deskripsi empat")
     public void user_input_deskripsi_empat_tujuhsatu() {
+        Hooks.delay(1);
         tambahBenefit.setdeskripsiempat("input data");
         extentTest.log(LogStatus.PASS,"User input deskripsi empat");
     }
@@ -228,6 +245,7 @@ public class TestJudulSatu {
     @Then("TCC.JC.071 User click button simpan")
     public void user_click_button_simpan_tujuhsatu() {
         tambahBenefit.clickButtonSimpan();
+        Assert.assertEquals(tambahBenefit.settextdatabenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS,"User click button simpan");
     }
 }

@@ -199,7 +199,7 @@ public class TestDeskripsiTiga {
     @And("TCC.JC.086 User input deskripsi satu")
     public void user_input_deskripsi_satu_delapanenam() {
         Hooks.delay(1);
-        tambahBenefit.setdeskripsisatu("Deskripsi @@@");
+        tambahBenefit.setdeskripsisatu("Input Data");
         extentTest.log(LogStatus.PASS,"User input deskripsi satu");
     }
 
@@ -227,7 +227,7 @@ public class TestDeskripsiTiga {
     @And("TCC.JC.086 User input deskripsi tiga")
     public void user_input_deskripsi_tiga_delapanenam() {
         Hooks.delay(1);
-        tambahBenefit.setdeskripsitiga("input data");
+        tambahBenefit.setdeskripsitiga("Data Simbol @@@@");
         extentTest.log(LogStatus.PASS,"User input deskripsi tiga");
     }
 
@@ -254,6 +254,7 @@ public class TestDeskripsiTiga {
     @Then("TCC.JC.086 User click button simpan")
     public void user_click_button_simpan_delapanenam() {
         tambahBenefit.clickButtonSimpan();
+        Assert.assertEquals(tambahBenefit.settextdatabenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS,"User click button simpan");
     }
 

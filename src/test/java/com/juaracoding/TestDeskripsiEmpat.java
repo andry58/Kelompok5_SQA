@@ -233,7 +233,7 @@ public class TestDeskripsiEmpat {
 
     @And("TCC.JC.092 User input deskripsi empat")
     public void user_input_deskripsi_empat_sembilandua() {
-        tambahBenefit.setdeskripsiempat("input data");
+        tambahBenefit.setdeskripsiempat("Data Simbol @@@");
         extentTest.log(LogStatus.PASS,"User input deskripsi empat");
     }
 
@@ -246,6 +246,7 @@ public class TestDeskripsiEmpat {
     @Then("TCC.JC.092 User click button simpan")
     public void user_click_button_simpan_sembilandua() {
         tambahBenefit.clickButtonSimpan();
+        Assert.assertEquals(tambahBenefit.settextdatabenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS,"User click button simpan");
     }
 

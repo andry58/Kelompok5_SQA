@@ -256,6 +256,7 @@ public class TestDeskripsiSatu {
     @Then("TCC.JC.074 User click button simpan")
     public void user_click_button_simpan_tujuhempat() {
         tambahBenefit.clickButtonSimpan();
+        Assert.assertEquals(tambahBenefit.settextdatabenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS,"User click button simpan");
     }
 

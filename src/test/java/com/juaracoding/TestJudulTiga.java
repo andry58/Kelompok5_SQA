@@ -179,13 +179,13 @@ public class TestJudulTiga {
 
     @And("TCC.JC.083 User input deskripsi satu")
     public void user_input_deskripsi_satu_delapantiga() {
-        tambahBenefit.setdeskripsisatu("Deskripsi @@@");
+        tambahBenefit.setdeskripsisatu("Input Data");
         extentTest.log(LogStatus.PASS,"User input deskripsi satu");
     }
 
     @And("TCC.JC.083 User input judul dua")
     public void user_input_judul_dua_delapantiga() {
-        tambahBenefit.setjuduldua("input data");
+        tambahBenefit.setjuduldua("Data Simbol @@@");
         extentTest.log(LogStatus.PASS,"User input judul dua");
     }
 
@@ -228,6 +228,7 @@ public class TestJudulTiga {
     @Then("TCC.JC.083 User click button simpan")
     public void user_click_button_simpan_delapantiga() {
         tambahBenefit.clickButtonSimpan();
+        Assert.assertEquals(tambahBenefit.settextdatabenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS,"User click button simpan");
     }
 

@@ -15,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import javax.swing.*;
+import javax.xml.xpath.XPath;
 
 import static org.openqa.selenium.Keys.ENTER;
 
@@ -56,19 +57,19 @@ public class BlogPages {
     @FindBy(xpath = "//input[@name='uploadedFile']")
     WebElement txtboxfotoedit;
 
-    @FindBy(xpath = "//input[@name='uploadedFile']")
+    @FindBy(xpath = "//*[@id=\"judul\"]")
     WebElement txtjudulblogedit;
 
-    @FindBy(xpath = "//input[@name='uploadedFile']")
+    @FindBy(xpath = "//select[@name='publish']")
     WebElement txtpublishedit;
 
-    @FindBy(xpath = "//input[@name='uploadedFile']")
+    @FindBy(xpath = "//select[@name='set_top']")
     WebElement txtsettohomeedit;
 
-    @FindBy(xpath = "//input[@name='uploadedFile']")
+    @FindBy(xpath = "//textarea[@name='body_preview']")
     WebElement txtcontentpriviewedit;
 
-    @FindBy(xpath = "//input[@name='uploadedFile']")
+    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[2]/div/div[6]/div/div/div[3]/div[3]")
     WebElement txtcontentedit;
 
     @FindBy(xpath = "//input[@name='uploadedFile']")
@@ -80,14 +81,20 @@ public class BlogPages {
     @FindBy(xpath = "//*[@id=\"simple-bar\"]/div[1]/div[2]/div/div/div/li[4]/a")
     WebElement buttonhomeblog;
 
-    @FindBy(xpath = "//input[@name='uploadedFile']")
+    @FindBy(xpath = "//span[normalize-space()='Blog']")
     WebElement buttonBlog;
 
     @FindBy(xpath = "//h3[normalize-space()='List Blog']")
     WebElement txtListBlog;
-
+    //*[@id="simple-bar"]/div[1]/div[2]/div/div/div/li[6]/a/span
     @FindBy(xpath = "//a[@class='btn btn-gradient']")
     WebElement buttontambahblog;
+
+    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/div[4]/figure[1]")
+    WebElement buttonpilihedit;
+
+    @FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div[2]/div/div/div/form/div[1]/h4")
+    WebElement txtisieditblog;
 
 
 
@@ -139,19 +146,18 @@ public class BlogPages {
 
     public void setjudublogedit(String judulblogedit)
     {
-        this.txtjudulblogedit.clear();
         this.txtjudulblogedit.sendKeys(judulblogedit);
     }
 
     public void setpublishblogedit()
     {
-        this.txtpublishedit.clear();
+        //this.txtpublishedit.clear();
         txtpublishedit.sendKeys("Active" + ENTER);
     }
 
     public void setsettohomeedit()
     {
-        this.txtsettohomeedit.clear();
+       // this.txtsettohomeedit.clear();
         txtsettohomeedit.sendKeys("Active" + ENTER);
     }
 
@@ -195,5 +201,14 @@ public class BlogPages {
     public void setBtnHomeBlog()
     {
         buttonhomeblog.click();
+    }
+    public void setpilihedit()
+    {
+        buttonpilihedit.click();
+    }
+
+    public String settxtisieditblog ()
+    {
+        return txtisieditblog.getText();
     }
 }

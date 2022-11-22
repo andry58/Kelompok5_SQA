@@ -228,6 +228,7 @@ public class TestEditBenefit {
     public void TCCJCC112_User_click_button_edit() {
       //  driver.get(Constants.URL);
         editBenefit.kliksiempatedit();
+        Assert.assertEquals(editBenefit.settulisaneditbenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.112 User click button edit");
     }
 
@@ -238,7 +239,9 @@ public class TestEditBenefit {
     public void TCCJCC113_User_go_to_web_Edit_Benefit() {
         //driver.get("https://dev.ptdika.com/web_jc_v2/admin/benefit/data-benefit/edit/83");
         editBenefit.setbtnhome();
+        Hooks.delay(1);
         editBenefit.setbtnenefit();
+        Hooks.delay(1);
         editBenefit.setbuttonedit();
         Assert.assertEquals(editBenefit.setmasukeditbenefit(),"Tambah Benefit");
         extentTest.log(LogStatus.PASS, "TCC.JCC.113 User go to web Edit Benefit");
@@ -251,6 +254,7 @@ public class TestEditBenefit {
     @And("TCC.JC.113 User edit judul satu")
     public void TCCJC113_User_edit_judul_satu() {
         editBenefit.setjudulsatuedit("Ganti Hanya Field Judul Satu");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "TCC.JC.113 User edit judul satu");
     }
 
@@ -267,7 +271,9 @@ public class TestEditBenefit {
     public void TCCJCC114_User_go_to_web_Edit_Benefit() {
         //driver.get("https://dev.ptdika.com/web_jc_v2/admin/benefit/data-benefit/edit/83");
         editBenefit.setbtnhome();
+        Hooks.delay(1);
         editBenefit.setbtnenefit();
+        Hooks.delay(1);
         editBenefit.setbuttonedit();
         Assert.assertEquals(editBenefit.setmasukeditbenefit(),"Tambah Benefit");
         extentTest.log(LogStatus.PASS, "TCC.JCC.114 User go to web Edit Benefit");
@@ -280,6 +286,7 @@ public class TestEditBenefit {
     @And("TCC.JC.114 User edit judul satu")
     public void TCCJC114_User_edit_judul_satu() {
         editBenefit.setjudulsatuedit("Ganti Hanya Field Judul Satu 12345");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "TCC.JC.114 User edit judul satu");
     }
 
@@ -308,7 +315,8 @@ public class TestEditBenefit {
 
     @And("TCC.JC.115 User edit judul satu")
     public void TCCJC115_User_edit_judul_satu() {
-        editBenefit.setjudulsatuedit("Ganti Hanya Field Judul Satu 12345");
+        editBenefit.setjudulsatuedit("Ganti Hanya Field Judul Satu @@@");
+        Hooks.delay(1);
         extentTest.log(LogStatus.PASS, "TCC.JC.115 User edit judul satu");
     }
 
@@ -316,6 +324,7 @@ public class TestEditBenefit {
     public void TCCJCC115_User_click_button_edit() {
         //  driver.get(Constants.URL);
         editBenefit.kliksiempatedit();
+        Assert.assertEquals(editBenefit.settulisaneditbenefit(), "Data Tidak Berhasil disimpan");
         extentTest.log(LogStatus.PASS, "TCC.JC.115 User click button edit");
     }
 
